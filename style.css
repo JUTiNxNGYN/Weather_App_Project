@@ -83,7 +83,6 @@ body{
     font-size: 40px;
     font-weight: 800;
     position: relative;
-
 }
 
 .weather-box .temperature sup{
@@ -97,7 +96,22 @@ body{
     font-weight: 700;
     text-transform: capitalize;
 }
+.weather-min .weather-max{
+    margin-block: 30px;
+    text-align: right;
+}
 
+.weather-min .weather-max .temperature sup{
+    font-size: 10px;
+    position: absolute;
+    font-weight: 500;
+}
+
+.weather-min .weather-max description{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 .weather-details{
     width: 100%;
     display: flex;
@@ -105,15 +119,29 @@ body{
     margin-top: 30px;
 }
 
-.precipitation, wind{
+.humidity, .wind{
     display: flex;
     align-items: center;
 }
 
-.precipitation{
+.humidity{
     margin-left: 20px;
 }
 
 .wind{
     margin-right: 20px;
+}
+
+.weather-details i{
+    font-size: 36px;
+}
+
+.weather-details text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700;
 }
